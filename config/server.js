@@ -14,8 +14,7 @@ app.set('views', './app/views');
 // Configuração do middleware
 app.use(express.static('./app/public'));
 app.use(bodyParser.urlencoded({extended: true}));
-const { check, validationResult } = expressValidator;
-app.use(check());
+app.use(expressValidator());
 
 //configurando o autoload das rotas, models e controllers pelo consign
 consign()
