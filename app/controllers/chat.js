@@ -15,5 +15,5 @@ module.exports.startChat = function(application, req, res){
         {apelido: username.apelido, mensagem: ' acabou de entrar no chat!'}
         );
 
-    res.render('chat');
+    res.render('chat', {username: username});
 }
